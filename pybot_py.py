@@ -20,7 +20,7 @@ hrdocument
 text_splitter = RecursiveCharacterTextSplitter(chunk_size = 1000, chunk_overlap = 0)
 texts = text_splitter.split_documents(hrdocument)
 
-api_key = "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"
+
 openai_embeddings = OpenAIEmbeddings(openai_api_key = api_key)
 embedding = openai_embeddings
 vectordb = Chroma.from_documents(documents = texts,
